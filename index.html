@@ -48,6 +48,17 @@
 
     </div> -->
     <div class="well fixedWell" id="well3">
+
+      <div class="sampleProtocol">
+        <h2>Sampling Protocol</h2>
+        <br>
+        <input type="text" name="protocol[]"/>
+      </div>
+
+      <br><br>
+      <button class="addSampleProtocol">Add Sample Protocol</button>
+      <button id="submit">submit</button>
+      <br><br>
         <h4>Do you need to specify your species measurements?</h4>
         <input type="radio" name="measureSpecies" value="yes" checked>Yes<br>
         <input type="radio" name="measureSpecies" value="no">No<br><br>
@@ -56,12 +67,16 @@
           <h1>Form Measurement Content</h1>
 
           <div class="measurementFields">
-
-            <label for="measureName[]">Measurement Name:</label><br>
-            <input type="text" name="measureName[]"/><br><br>
-            <label for="measureType[]">Measurement Type (units):</label><br>
-            <input type="text" name="measureType[]"/><br><br>
-
+            <div class="row">
+              <div class="col-md-5">
+                <label for="measureName[]">Measurement Name:</label><br>
+                <input type="text" name="measureName[]"/><br><br>
+              </div>
+              <div class="col-md-5">
+                <label for="measureType[]">Unit of Measurement:</label><br>
+                <input type="text" name="measureType[]"/><br><br>
+              </div>
+            </div>
           </div>
 
           <br><br>
