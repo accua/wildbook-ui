@@ -12,8 +12,8 @@ body {
   font-size: 35px;
   font-family: 'Nunito', sans-serif;
   padding-top: 50px;
-
 }
+
 .well {
   margin-left: 15%;
   margin-right: 15%;
@@ -21,14 +21,10 @@ body {
   width: 70%;
 }
 
-#well1 {
-  z-index: 10;
+.fixedWell {
   position: absolute;
-}
-
-#well2 {
-  z-index: 9;
-  position: relative;
+  min-height: 550px;
+  min-width: 550px;
 }
 
 #navigationBar {
@@ -122,4 +118,5 @@ body {
 .radio:checked + .label {
   color: white;
   background: rgba(0, 0, 0, 0.25);
+  position: relative;
 }
