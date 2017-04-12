@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.1/jquery.animatecss.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animate.css">
+    <title>WildBook Installer</title>
+  </head>
+  <body>
+    <form id="installerForm" action="index.html" method="post">
+    <!-- <div class="well fixedWell" id="well1">
+
+      <form id="installerForm" action="index.html" method="post">
+        <h4>Would you like us to send you email notifications with updates?</h4>
+        <input type="radio" name="sendEmailNotifications" value="true" checked>Yes<br>
+        <input type="radio" name="sendEmailNotifications" value="false">No<br><br>
+        <label for="autoEmail">Select your No-Reply email address for sending emails to your research team.</label>
+        <br>
+        <input type="text" name="autoEmail" id="autoEmailAddress">
+        <br><br>
+        <label for="newSubmission">Input a comma separated list of all email addresses for researchers to be notified</label>
+        <br>
+        <input type="text" name="newSubmission" id="newSubmissionEmail" >
+        <br><br>
+        <button id="submit">submit</button>
+      </form>
+    </div> -->
+    <!-- <div class="well fixedWell" id="well2">
+
+        <br>
+        <div class="input_fields_wrap">
+          <h2>Study Sites</h2>
+          <br>
+          <input type="text" name="mytext[]"/>
+        </div>
+
+        <br><br>
+        <button class="addStudySite">Add Study Site</button>
+        <button id="submit">submit</button>
+
+    </div> -->
+    <div class="well fixedWell" id="well3">
+        <h4>Do you need to specify your species measurements?</h4>
+        <input type="radio" name="measureSpecies" value="yes" checked>Yes<br>
+        <input type="radio" name="measureSpecies" value="no">No<br><br>
+        <div id="speciesMeasurementInputForm">
+
+          <h1>Form Measurement Content</h1>
+
+          <div class="measurementFields">
+
+            <label for="measureName[]">Measurement Name:</label><br>
+            <input type="text" name="measureName[]"/><br><br>
+            <label for="measureType[]">Measurement Type (units):</label><br>
+            <input type="text" name="measureType[]"/><br><br>
+
+          </div>
+
+          <br><br>
+          <button class="addMeasureField">Add New Measurement Field</button>
+
+        </div>
+      </div>
+        <br><br>
+          </form>
+  </body>
+</html>

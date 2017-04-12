@@ -1,0 +1,19 @@
+.well {
+  margin: 50px;
+}
+
+#well1 {
+  z-index: 10;
+  position: absolute;
+}
+
+#well2 {
+  z-index: 9;
+  position: absolute;
+}
+
+.fixedWell {
+  width: 800px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
