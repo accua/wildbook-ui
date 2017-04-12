@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.1/jquery.animatecss.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+    <title>WildBook Installer</title>
+  </head>
+  <body>
+
+    <img id="logo" src="Untitled-6.png" alt="WildMe Logo">
+    <span id="title">Wildbook Installer</span>
+    <div class="container well" id="navigationBar">
+  <input type="radio" class="radio" name="progress" value="five" id="five">
+  <label for="five" class="label">Animal Measurements</label>
+
+  <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
+  <label for="twentyfive" class="label">New Category</label>
+
+  <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
+  <label for="fifty" class="label">Also New Category</label>
+
+  <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
+  <label for="seventyfive" class="label">Also New Category</label>
+
+  <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
+  <label for="onehundred" class="label">Also New Category</label>
+
+  <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+</div>
+    <div class="well" id="well1">
+      <form id="installerForm" action="index.html" method="post">
+        <h4>Would you like us to send you email notifications with updates?</h4>
+        <input type="radio" name="sendEmailNotifications" value="true" checked> Yes<br>
+        <input type="radio" name="sendEmailNotifications" value="false"> No<br><br>
+        <label for="autoEmail">Select your No-Reply email address for sending emails to your research team.</label>
+        <br>
+        <input type="text" name="autoEmail" id="autoEmailAddress">
+        <br><br>
+        <label for="newSubmission">Input a comma separated list of all email addresses for researchers to be notified</label>
+        <br>
+        <input type="text" name="newSubmission" id="newSubmissionEmail" >
+        <br><br>
+        <button id="submit">submit</button>
+      </form>
+    </div>
+    <div class="well" id="well2">
+
+      <form id="installerForm" action="index.html" method="post">
+        <h4>Hoobastank</h4>
+        <input type="radio" name="sendEmailNotifications" value="true" checked>Yes<br>
+        <input type="radio" name="sendEmailNotifications" value="false">No<br><br>
+        <label for="autoEmail">Select your No-Reply email address for sending emails to your research team.</label>
+        <br>
+        <input type="text" name="autoEmail" id="autoEmailAddress">
+        <br><br>
+        <label for="newSubmission">Input a comma separated list of all email addresses for researchers to be notified</label>
+        <br>
+        <input type="text" name="newSubmission" id="newSubmissionEmail" >
+        <br><br>
+        <button id="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
