@@ -14,23 +14,29 @@
     <title>WildBook Installer</title>
   </head>
   <body>
-    <img id="logo" src="Untitled-6.png" alt="WildMe Logo">
-    <span id="title">Wildbook Installer</span>
-    <div class="container well" id="navigationBar">
-      <input type="radio" class="radio" name="progress" value="five" id="five">
-      <label for="five" class="label">Animal Measurements</label>
+    <div class="row">
+      <div class="col-md-2">
 
-      <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
-      <label for="twentyfive" class="label">New Category</label>
+      </div>
+      <div class="col-md-10" id="title">
+          <img id="logo" src="Untitled-6.png" alt="WildMe Logo"> Wildbook Installer
+      </div>
+    </div>
+    <div class="well" id="navigationBar">
+      <input type="radio" class="radio cat1" name="progress" value="five" id="five">
+      <label for="five" class="label"><span class="cat1">Animal Measurements</span></label>
 
-      <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
-      <label for="fifty" class="label">Also New Category</label>
+      <input type="radio" class="radio cat2" name="progress" value="twentyfive" id="twentyfive" checked>
+      <label for="twentyfive" class="label"><span class="cat2">New Category</span></label>
 
-      <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
-      <label for="seventyfive" class="label">Also New Category</label>
+      <input type="radio" class="radio cat3" name="progress" value="fifty" id="fifty">
+      <label for="fifty" class="label"><span class="cat3">Also New Category</span></label>
 
-      <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
-      <label for="onehundred" class="label">Also New Category</label>
+      <input type="radio" class="radio cat4" name="progress" value="seventyfive" id="seventyfive">
+      <label for="seventyfive" class="label"><span class="cat4">Also New Category</span></label>
+
+      <input type="radio" class="radio cat5" name="progress" value="onehundred" id="onehundred">
+      <label for="onehundred" class="label"><span class="cat5">Also New Category</span></label>
       <div class="progress">
         <div class="progress-bar"></div>
       </div>
@@ -40,7 +46,6 @@
         <div class="form-group">
           <h4>Would you like us to send you email notifications with updates?</h4>
           <input type="radio" name="sendEmailNotifications" value="true" checked> Yes<br>
-
           <input type="radio" name="sendEmailNotifications" value="false"> No<br><br>
           <label for="autoEmail">Select your No-Reply email address for sending emails to your research team.</label>
           <br>
@@ -51,46 +56,56 @@
           <br>
           <input class="form-control" type="text" name="newSubmission" id="newSubmissionEmail" >
           <br><br>
-          <button class="btn" id="submit">submit</button>
         </div>
       </div>
       <div class="well fixedWell" id="well2">
         <div class="input_fields_wrap">
           <h2>Study Sites</h2>
-          <input class="form-control" type="text" name="mytext[]"/>
+          <div class="row">
+            <div class="col-md-10">
+              <input class="form-control" type="text" name="mytext[]"/>
+            </div>
+          </div>
+          <br>
         </div>
-        <button class="btn addStudySite">Add Study Site</button>
-        <button class="btn" id="submit">submit</button>
+        <button class="btn btn-info addStudySite">Add Study Site</button>
       </div>
       <div class="well fixedWell" id="well3">
-        <div class="sampleProtocol">
-          <h2>Sampling Protocol</h2>
-          <input class="form-control" type="text" name="protocol[]"/>
-        </div>
-        <button class="btn addSampleProtocol">Add Sample Protocol</button>
-        <button class="btn" id="btn submit">submit</button>
+        <h1>Form Measurement Content</h1>
+
+
         <h4>Do you need to specify your species measurements?</h4>
         <input type="radio" name="measureSpecies" value="yes" checked> Yes<br>
         <input type="radio" name="measureSpecies" value="no"> No<br><br>
         <div id="speciesMeasurementInputForm">
-          <h1>Form Measurement Content</h1>
           <div class="measurementFields">
             <div class="row">
-              <div class="col-md-5">
+              <div class="col-md-5 reduceMarginBottom">
                 <label for="measureName[]">Measurement Name:</label><br>
                 <input class="form-control" type="text" name="measureName[]"/><br><br>
               </div>
-              <div class="col-md-5">
+              <div class="col-md-5 reduceMarginBottom">
                 <label for="measureType[]">Unit of Measurement:</label><br>
-                <input class="form-control" type="text" name="measureType[]"/><br><br>
+                <input class="form-control" type="text" name="measureType[]"/><br><br><br>
               </div>
             </div>
           </div>
-          <br><br>
-          <button class="btn addMeasureField">Add New Measurement Field</button>
+          <button class="btn btn-info addMeasureField">Add New Measurement Field</button>
         </div>
+
+        <div class="sampleProtocol">
+          <h2>Sampling Protocol</h2>
+          <p>Sampling protocol is the procedure used to select units from the study population to be measured. The goal of the sampling protocol is to select units that are representative of the study population with respect to the attribute(s) of interest. Please define your protocol with a minimum of words.</p>
+          <div class="row">
+            <div class="col-md-11">
+              <input class="form-control" type="text" name="protocol[]"/>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <br>
+        </div>
+          <button class="btn btn-info addSampleProtocol">Add Sample Protocol</button>
       </div>
-      <br><br>
     </form>
   </body>
 </html>

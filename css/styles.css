@@ -9,9 +9,32 @@ body {
 }
 
 #title {
-  font-size: 35px;
+  font-size: 5em;
   font-family: 'Nunito', sans-serif;
-  padding-top: 50px;
+}
+
+.cancelIcon {
+  height: 20px;
+  weight: 20px;
+}
+
+.cancelIconColumn {
+  padding-top: 3%;
+  margin-left: -2%;
+}
+
+.cancelIconColumn2 {
+  margin-left: -2%;
+}
+
+.remove_field:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.remove_field {
+  color: black;
+  font-size: 20px;
 }
 
 .well {
@@ -37,6 +60,9 @@ body {
   color: white;
 }
 
+.reduceMarginBottom {
+  margin-bottom: -30px;
+}
 
 .container {
   margin: 20px auto;
