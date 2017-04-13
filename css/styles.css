@@ -44,6 +44,18 @@ body {
   width: 70%;
 }
 
+.submissionCol {
+  text-align: center;
+}
+
+#submit {
+  width: 200px;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
 .fixedWell {
   position: absolute;
   min-height: 550px;

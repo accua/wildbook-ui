@@ -24,19 +24,19 @@
     </div>
     <div class="well" id="navigationBar">
       <input type="radio" class="radio cat1" name="progress" value="five" id="five">
-      <label for="five" class="label"><span class="cat1">Animal Measurements</span></label>
+      <label for="five" class="label"><span class="cat1">Email Configuration</span></label>
 
       <input type="radio" class="radio cat2" name="progress" value="twentyfive" id="twentyfive" checked>
-      <label for="twentyfive" class="label"><span class="cat2">New Category</span></label>
+      <label for="twentyfive" class="label"><span class="cat2">Study Sites</span></label>
 
       <input type="radio" class="radio cat3" name="progress" value="fifty" id="fifty">
-      <label for="fifty" class="label"><span class="cat3">Also New Category</span></label>
+      <label for="fifty" class="label"><span class="cat3">Measurements</span></label>
 
       <input type="radio" class="radio cat4" name="progress" value="seventyfive" id="seventyfive">
-      <label for="seventyfive" class="label"><span class="cat4">Also New Category</span></label>
+      <label for="seventyfive" class="label"><span class="cat4">Branding</span></label>
 
       <input type="radio" class="radio cat5" name="progress" value="onehundred" id="onehundred">
-      <label for="onehundred" class="label"><span class="cat5">Also New Category</span></label>
+      <label for="onehundred" class="label"><span class="cat5">Finish</span></label>
       <div class="progress">
         <div class="progress-bar"></div>
       </div>
@@ -61,9 +61,11 @@
       <div class="well fixedWell" id="well2">
         <div class="input_fields_wrap">
           <h2>Study Sites</h2>
+          <p>Specify all of the study sites where your team conducts their research. Please limit your site names to alphanumeric characters and use a minimum of words. You will be able to specify precise coordinates later. Do not use punctuation in your site name.</p>
+          <br>
           <div class="row">
             <div class="col-md-10">
-              <input class="form-control" type="text" name="mytext[]"/>
+              <input class="form-control studyClass" type="text" name="studySite"/>
             </div>
           </div>
           <br>
@@ -81,12 +83,12 @@
           <div class="measurementFields">
             <div class="row">
               <div class="col-md-5 reduceMarginBottom">
-                <label for="measureName[]">Measurement Name:</label><br>
-                <input class="form-control" type="text" name="measureName[]"/><br><br>
+                <label for="measureName">Measurement Name:</label><br>
+                <input class="form-control mNameClass" type="text" name="measureName"/><br><br>
               </div>
               <div class="col-md-5 reduceMarginBottom">
-                <label for="measureType[]">Unit of Measurement:</label><br>
-                <input class="form-control" type="text" name="measureType[]"/><br><br><br>
+                <label for="measureType">Unit of Measurement:</label><br>
+                <input class="form-control mTypeClass" type="text" name="measureType"/><br><br><br>
               </div>
             </div>
           </div>
@@ -98,7 +100,7 @@
           <p>Sampling protocol is the procedure used to select units from the study population to be measured. The goal of the sampling protocol is to select units that are representative of the study population with respect to the attribute(s) of interest. Please define your protocol with a minimum of words.</p>
           <div class="row">
             <div class="col-md-11">
-              <input class="form-control" type="text" name="protocol[]"/>
+              <input class="form-control sampleProtocolClass" type="text" name="protocol"/>
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -106,6 +108,35 @@
         </div>
           <button class="btn btn-info addSampleProtocol">Add Sample Protocol</button>
       </div>
+
+      <div class="well fixedWell" id="well4">
+        <h2>Customize your WildBook Branding</h2>
+        <br>
+        <p>Upload a small image (150px x 150px) for your brand logo:</p>
+        <input type="file" id="brandLogo">
+        <br>
+        <p>Upload a background image (1800px x 1200px) for your landing page:</p>
+        <input type="file" id="heroImg">
+      </div>
+
+      <div class="well fixedWell" id="well5">
+        <div class="row">
+          <div class="col-md-2">
+
+          </div>
+          <div class="col-md-8 submissionCol">
+            <h2>Complete the Setup Process</h2>
+            <br>
+            <p>Are you ready to save your settings and launch your custom WildBook?</p>
+            <br>
+            <img src="submitButton.png" id="submit">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
     </form>
   </body>
 </html>
