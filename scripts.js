@@ -136,6 +136,6 @@ $(document).ready(function() {
          "backgroundImage": brandBackgroundImg
        }
      ];
-      console.log(jsonOutput);
+      return jsonOutput;
     });
 });
