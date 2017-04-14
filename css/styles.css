@@ -48,6 +48,10 @@ body {
   z-index: 1;
 }
 
+#well3 {
+  display: none;
+}
+
 .submissionCol {
   text-align: center;
 }
@@ -62,7 +66,7 @@ body {
 
 .fixedWell {
   position: absolute;
-  min-height: 550px;
+  min-height: 350px;
   min-width: 550px;
 }
 
